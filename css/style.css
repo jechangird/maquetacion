@@ -28,12 +28,12 @@
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   text-decoration: none;
   color: black;
   font-weight: 600;
- 
+  padding: 0 15px;
 }
 
 .cabecera__img {
@@ -41,15 +41,265 @@
   height: 70%;
   padding-left: 20px;
   padding-right: 20px;
-  
 }
 
 /*fin cabecera*/
 
 /*inicio navegacion*/
+.navegacion {
+  width: 70%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+}
+
+.navegacion a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.navegacion a:hover {
+  color: black;
+  background-color: darkgoldenrod;
+}
 
 /*fin navegacio*/
 
 /*inicio banner*/
+.banner {
+  background-image: url(../img/elvira\ y\ yo.jpg);
+  background-position: center;
+  width: 70%;
+  height: calc(
+    100vh - 110px
+  ); /*100vh es toda la ventana-
+  110px (5opx cabecera+60px navegacion*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 30px;
+}
 
+.banner h1 {
+  font-size: 75px;
+}
+
+.banner h2 {
+  font-size: 30px;
+}
+
+.banner a {
+  background-color: white;
+  width: 250px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 30px;
+  color: black;
+}
+
+.banner a:hover {
+  background-color: darkgoldenrod;
+  color: white;
+}
 /*fin banner*/
+
+/*inicia seccion 2*/
+.seccion-2 {
+  background-color: rgb(203, 231, 196);
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloque-izq {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0 3%;
+}
+
+.izq-titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.izq-titulo h2 {
+  font-size: 28px;
+}
+.izq-titulo h3 {
+  font-size: 18px;
+}
+
+.izq-imagen {
+  width: 100%;
+}
+
+.izq-imagen img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.izq-parrafo {
+  font-size: 18px;
+}
+
+.bloque-der {
+  width: 40%;
+  height: 100%;
+  padding: 0 3%;
+}
+
+.der-titulo {
+  text-align: center;
+}
+
+.der-titulo h3 {
+  font-size: 20px;
+}
+
+.der-noticia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.noticias-img {
+  width: 50%;
+}
+
+.noticias-img img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.noticias-textos {
+  width: 50%;
+}
+
+.noticias-textos h4 {
+  font-size: 17px;
+  text-align: center;
+}
+
+.noticias-textos p {
+  font-size: 15px;
+  text-align: justify;
+  padding: 10px;
+}
+/*fin seccion 2
+
+
+/*inicia seccion-3*/
+.seccion-3 {
+  background-color: blueviolet;
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.article {
+  background-color: aqua;
+  width: 60%;
+  height: 100%;
+  padding: 0 3%;
+}
+
+.tabla-titulo {
+  background-color: beige;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabla-div {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.tabla {
+  table-layout: auto;
+  border: 1px solid color black;
+}
+
+.fila-encabezado {
+  background-color: greenyellow;
+}
+
+.fila-dato {
+  width: auto;
+  height: 40px;
+}
+
+.columna {
+}
+
+.rs-div {
+}
+
+.rs-img {
+  width: 100%;
+  height: 40px;
+}
+.rs-img img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.aside {
+  background-color: red;
+  width: 40%;
+  height: 100%;
+}
+
+.mapa {
+}
+
+.form-div {
+}
+
+.formulario {
+}
+
+.input {
+}
+
+.textarea {
+}
+
+.submit {
+}
+
+/*fin seccion-3 quede min 12:06*/
