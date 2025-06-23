@@ -247,15 +247,22 @@
   display: flex;
   justify-content: center;
   align-self: center;
+  width: 100%;
+  height: 50%;
 }
 
 .tabla {
   table-layout: auto;
   border: 1px solid color black;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
 }
 
 .fila-encabezado {
   background-color: greenyellow;
+  width: auto;
+  height: 40px;
 }
 
 .fila-dato {
@@ -264,6 +271,8 @@
 }
 
 .columna {
+  border: 1px solid color rgb(218, 22, 22);
+  text-align: center;
 }
 
 .rs-div {
